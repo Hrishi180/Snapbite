@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+<meta name="viewport" content="with=device-width, initial-scale1.0">
+<title>Snapbite</title> 
+<link rel="stylesheet" href="CSS/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Kalam&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" charset="utf-8"></script> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+    <section class="subheader">
+    
+    <nav>
+        <a href="Index.html"><img src="Images/logo.png"></a>    
+        <div class="nav-links">
+        
+            <ul>
+                <li><a href="Index.html"> HOME</a></li>  
+                <li><a href="Kitchen-tips.html"> KITCHEN TIPS</a></li> 
+                <li><a href="Food-Trends.html"> FOOD TRENDS</a></li> 
+                <li><a href="Subscribe.html"> SUBSCRIBE</a></li>
+            </ul>
+        
+        </div>
+    </nav>
+        
+   <div class="menu-btn">
+       <i class="fa-sharp fa-solid fa-bars"></i>
+   </div>          
+   
+          <!---------------dynamic side bar menu------------------------->
+        
+   <div class="sidebar">
+       <div class="close-btn">
+       <i class="fa fa-times"></i>
+       </div>
+        
+   <div class="menu"> 
+    <div class="item">
+        <a class = "sub-btn"> Cusines <i class="fa fa-angle-right dropdown"></i></a>
+        <div class="sub-menu">
+            <a href="Indian.html" class="sub-item"> Indian </a>
+            <a href="Italian.html" class="sub-item"> Italian </a>
+            <a href="Chinese.html" class="sub-item"> Chinese </a>
+        </div>
+       </div> 
+   <div class="item">
+        <a class = "sub-btn"> Meals <i class="fa fa-angle-right dropdown"></i></a>
+        <div class="sub-menu">
+            <a href="Breakfast.html" class="sub-item"> Breakfast </a>
+            <a href="Lunch.html" class="sub-item"> Lunch </a>
+            <a href="dinner.html" class="sub-item"> Dinner </a>
+        </div>
+   </div> 
+    <div class="item"><a href="About_us.html"> About Us</a></div> 
+    <div class="item"><a href="Contact.html"> Contact</a></div> 
+       
+   </div>     
+   </div>
+    
+        <!-----------script to view the drop down in the dynamic side bar---------------->
+        
+   <script type="text/javascript">
+       $(document).ready(function(){
+           
+           $('.sub-btn').click(function(){
+               $(this).next('.sub-menu').slideToggle();
+               $(this).find('.dropdown').toggleClass('rotate');
+           });
+           
+            $('.menu-btn').click(function(){
+                $('.sidebar').addClass('active');
+            });
+           
+           $('.close-btn').click(function(){
+                $('.sidebar').removeClass('active');
+            });
+       });
+    </script>    
+         
+    
+        <!-----main title--->
+    <h1>Scrambled Eggs</h1>
+    
+    
+    
+    </section>
+<!-------------------------------Recipe ----------------------------->
+    
+<section class="scrambled">
+       
+<img src="Images/scram.jpg">
+ 
+  
+</section>
+<section class="recipe">
+    <h3> Recipe </h3>
+    <!------adding thematic break--------->
+    <hr>
+    <div class="row1">
+        <div class="rec-col">
+            <i class="fa fa-clock-o"></i>
+            <p> Duration: 10min </p>
+        </div>
+        <div class="rec-col">
+            <i class="fa fa-cutlery"></i>
+            <p> Difficulty: Easy </p>
+        </div>
+        <div class="rec-col">
+            <span class="material-symbols-outlined">
+            dinner_dining
+            </span>
+            <p> Serves: 2 </p>
+        </div>
+    </div>
+</section>
+ 
+    
+    
+    <section class="ing">
+            <h3> Ingredients </h3>
+        <!-------adding thematic break------>
+            <hr>
+        <!---list for ingredients ------->
+            <ul>
+                <li> 4 Eggs </li>
+                <li> Salt </li>
+                <li> Pepper </li>
+            </ul>
+    
+    </section>
+    
+    <section class="steps">
+        <div class="title">
+            <h3> Preparation </h3>
+            <hr>
+        </div>
+        <div class="content">
+            <h4> Step1: </h4>
+            <p> Crack eggs into a bowl and beat well with a fork or whisk </p>
+            <hr>
+            <h4> Step2: </h4>
+            <p> Heat a non-stick pan over medium heat and add butter </p>
+            <hr>
+            <h4> Step3: </h4>
+            <p> Pour in beaten eggs and cook, stirring constantly, until set but still moist</p>
+            <hr>
+            <h4> Step4: </h4>
+            <p> Season with salt and pepper to taste </p>
+            <hr>
+            <h4> Step4: </h4>
+            <p> Serve hot with toast or any desired toppings </p>
+        </div>
+    </section>
+    
+
+
+<!-------------------------------footer----------------------------->
+    
+<section class="footer">
+    <h4>About Us</h4>
+    <p>SnapBite is a food and recipe website that provides quick and easy recipes for everyday cooking. We believe that cooking should be an enjoyable experience,<br> so we strive to make meal prep as simple and effortless as possible</p>
+    <!------ social media icons ------->
+    <div class="icons">
+        <i class='fa fa-instagram'></i>
+        <i class='fa fa-facebook'></i>
+        <i class='fa fa-twitter'></i>
+        <i class='fa fa-youtube'></i>
+    </div>
+</section>
+         
+</body>
+</html>

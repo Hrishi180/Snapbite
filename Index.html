@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+<meta name="viewport" content="with=device-width, initial-scale1.0">
+<title>Snapbite</title> 
+    
+    <!----linking the css sheet------>
+<link rel="stylesheet" href="Css/style.css">
+    
+    <!----links references included for font and icons---------->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Kalam&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" charset="utf-8"></script> 
+    
+</head>
+<body>
+    <section class="header">
+        
+    <!----navigation ---->
+    <nav>
+        <a href="Index.html"><img src="Images/logo.png"></a>    
+        <div class="nav-links">
+        
+            <ul>
+                <li><a href="Index.html"> HOME</a></li>  
+                <li><a href="Kitchen-tips.html"> KITCHEN TIPS</a></li> 
+                <li><a href="Food-Trends.html"> FOOD TRENDS</a></li> 
+                <li><a href="Subscribe.html"> SUBSCRIBE</a></li>
+            </ul>
+        
+        </div>
+    </nav>
+        
+   <div class="menu-btn">
+       <i class="fa-sharp fa-solid fa-bars"></i>
+   </div>          
+    
+        <!---------------dynamic side bar menu------------------------->
+        
+   <div class="sidebar">
+       <div class="close-btn">
+       <i class="fa fa-times"></i>
+       </div>
+        
+   <div class="menu"> 
+    <div class="item">
+        <a class = "sub-btn"> Cusines <i class="fa fa-angle-right dropdown"></i></a>
+        <div class="sub-menu">
+            <a href="Indian.html" class="sub-item"> Indian </a>
+            <a href="Italian.html" class="sub-item"> Italian </a>
+            <a href="Chinese.html" class="sub-item"> Chinese </a>
+        </div>
+       </div> 
+   <div class="item">
+        <a class = "sub-btn"> Meals <i class="fa fa-angle-right dropdown"></i></a>
+        <div class="sub-menu">
+            <a href="Breakfast.html" class="sub-item"> Breakfast </a>
+            <a href="Lunch.html" class="sub-item"> Lunch </a>
+            <a href="dinner.html" class="sub-item"> Dinner </a>
+        </div>
+   </div> 
+    <div class="item"><a href="About_us.html"> About Us</a></div> 
+    <div class="item"><a href="Contact.html"> Contact</a></div> 
+       
+   </div>     
+   </div>
+    
+    
+    <!-----------script to view the drop down in the dynamic side bar---------------->
+        
+   <script type="text/javascript">
+       $(document).ready(function(){
+           
+           $('.sub-btn').click(function(){
+               $(this).next('.sub-menu').slideToggle();
+               $(this).find('.dropdown').toggleClass('rotate');
+           });
+           
+            $('.menu-btn').click(function(){
+                $('.sidebar').addClass('active');
+            });
+           
+           $('.close-btn').click(function(){
+                $('.sidebar').removeClass('active');
+            });
+       });
+    </script>    
+        
+        
+        
+        
+    <!----main title --->    
+    <div class="text-box">
+        <h1> One stop for all your recipes </h1> 
+        
+        <!-------Get Cokking button----->
+        <a id="button" class="hero-btn"> Get Cooking! </a>
+    </div>
+    
+    
+    
+    </section>
+<!-------------------------------sections----------------------------->
+
+    <section  id="category" class="Recipies">
+    <h1>Categories</h1>
+    <p> Recipes taliored for your choice of meal</p>
+       
+    <!----using grid to tabulate--->    
+    <div class="row">
+       <div class="recipe-col">
+           <a href="Breakfast.html"><img src="Images/breakfast.jpg"></a>
+        <h3>Breakfast</h3>
+           <p> Start your day with a healthy breakfast</p>
+       </div>
+       <div class="recipe-col">
+           <a href="Lunch.html"><img src="Images/lunch.jpg"></a>
+        <h3>Lunch</h3>
+           <p> Quick and easy recipes for mid-day cravings</p>
+       </div>
+       <div class="recipe-col">
+           <a href="dinner.html"><img src="Images/dinner.webp"></a>
+        <h3>Dinner</h3>
+           <p> Dinner recipes that complete your day</p>
+       </div>
+    </div>
+    
+    </section>
+<!-------------------------------Recipie of the day-----------------------------> 
+    <section class="Featured">
+    <h2>Featured Recipes</h2>
+    <p1> We present you the recipes that stood out</p1>
+     
+        <!----using grid to tabulate---> 
+    <div class="row4">
+       <div class="row-f">
+           <a href="scrambled-eggs.html"><img src="Images/scrambled.jpg"></a>
+        <h4>Scrambled Eggs</h4>
+           <p2> An egg dish that blends the whites and yolks of eggs with milk and seasonings</p2>
+       </div>
+       <div class="row-f">
+           <a href="Butter-chicken.html"><img src="Images/butter-chicken.jpg"></a>
+        <h4>Butter Chicken</h4>
+           <p2> Grilled chicken simmered in a spicy, aromatic, buttery and creamy tomato gravy</p2>
+       </div>
+       <div class="row-f">
+           <a href="Chicken-biryani.html"><img src="Images/biryani.jpg"></a>
+        <h4>Chicken Biryani</h4>
+           <p2>Basmati rice flavored with fragrant spices and layered with succulent pieces of chicken simmered in a thick gravy</p2>
+       </div>
+    </div>
+    
+    </section>
+    
+<!-------------------------------Footer-----------------------------> 
+    
+<section class="footer">
+    <h4>About Us</h4>
+    <p>SnapBite is a food and recipe website that provides quick and easy recipes for everyday cooking. We believe that cooking should be an enjoyable experience,<br> so we strive to make meal prep as simple and effortless as possible</p>
+    <!----adding footer social media icons---->
+    <div class="icons">
+        <i class='fa fa-instagram'></i>
+        <i class='fa fa-facebook'></i>
+        <i class='fa fa-twitter'></i>
+        <i class='fa fa-youtube'></i>
+    </div>
+</section>
+
+<!------------------Scrollable button-------------------------------->    
+    
+<script>
+document.getElementById('button').addEventListener('click',function()
+{
+    document.getElementById('category').scrollIntoView({behavior: 'smooth'});
+})
+</script>    
+         
+</body>
+</html>
